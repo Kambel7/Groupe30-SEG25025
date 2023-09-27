@@ -4,6 +4,8 @@ Ceci est le premier texte de Kambel pour le lab 1 de seg 2505
 
 test 
 ajout d'une autre ligne
+autre ligne de mon texte
+autre ligne
 
 
 
