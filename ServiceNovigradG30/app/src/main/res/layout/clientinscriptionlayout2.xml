@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.1"
+        android:orientation="horizontal"
+        android:baselineAligned="false">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            tools:ignore="NestedWeights">
+
+            <TextView
+                android:id="@+id/ClientPrenomText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:background="#FDC1D6"
+                android:text="@string/prenom"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/ClientSetPrenomText"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:layout_weight="2"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:id="@+id/ClientNomText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:background="#FDC1D6"
+                android:text="@string/nom"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/ClientSetNomText"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:inputType="textPersonName"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/ClientUsernameInscriptionText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:background="#FDC1D6"
+                android:text="@string/nom_d_utilisateur1"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/ClientSetUsernameInscriptionText"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/ClientDatedenaissanceText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#AFE3EA"
+                android:text="@string/date_de_naissance"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/ClientJourText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:background="#FDC1D6"
+                android:text="@string/jour"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/ClientSetJourText"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:inputType="number"
+                android:maxLength="2"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/ClientMoisText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:background="#FDC1D6"
+                android:text="@string/mois"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/ClientSetMoisText"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:inputType="number"
+                android:maxLength="2"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/ClientAnneeText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:background="#FDC1D6"
+                android:text="@string/annee"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/ClientSetAnneeText"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:inputType="number"
+                android:maxLength="4"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="15dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"></LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/ClientCoordonneesText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:background="#C5F1F6"
+                android:text="@string/coordonnees"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/ClientAdresseText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:background="#FDC1D6"
+                android:text="@string/adresse"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/ClientSetAdresseText"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/ClientVilleText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:background="#FDC1D6"
+                android:text="Ville"
+                android:textSize="16sp"
+                tools:ignore="HardcodedText" />
+
+            <EditText
+                android:id="@+id/ClientSetVilleText"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/ClientProvinceText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:background="#FDC1D6"
+                android:text="@string/province"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/ClientSetProvinceText"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:maxLength="2"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/ClientSexeText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:background="#FDC1D6"
+                android:text="@string/sexe"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/ClientSetSexeText"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:layout_weight="1"
+                android:hint='Enter "M" or "F"'
+                android:inputType="textCapCharacters"
+                android:maxLength="1" />
+
+            <TextView
+                android:id="@+id/ClientPasswordInscriptionText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:background="#FDC1D6"
+                android:text="@string/password"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/ClientSetPasswordInscriptionText"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:layout_weight="0.5"
+                android:inputType="text|textPassword" />
+
+            <TextView
+                android:id="@+id/ClientErreurInscriptionText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:textColor="#FA0B0B" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <Button
+            android:id="@+id/ClientInscriptionCreationButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="ClientConnectedInscriptionButton"
+            android:text="@string/inscription" />
+    </LinearLayout>
+
+</LinearLayout>

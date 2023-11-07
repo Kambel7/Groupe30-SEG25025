@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#BAE1E6"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/InitialLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="1dp">
+
+        <TextView
+            android:id="@+id/IntroductionText"
+            android:layout_width="match_parent"
+            android:layout_height="84dp"
+            android:layout_weight="1"
+            android:background="#EFE8AE"
+            android:text="@string/qui_etes_vous"
+            android:textAlignment="center"
+            android:textColor="#9C27B0"
+            android:textSize="34sp"
+            android:textStyle="italic" />
+
+        <Button
+            android:id="@+id/AdministrateurButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="AdministrateurButton"
+            android:text="@string/Administrateur"
+            tools:ignore="VisualLintButtonSize" />
+
+        <Button
+            android:id="@+id/EmployerButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="EmployerButton"
+            android:text="@string/employer"
+            tools:ignore="VisualLintButtonSize" />
+
+        <Button
+            android:id="@+id/ClientButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="ClientButton"
+            android:text="@string/client"
+            tools:ignore="VisualLintButtonSize" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

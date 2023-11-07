@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ConnexionClientLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4D9D7"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/ClientConnexionText"
+        android:layout_width="match_parent"
+        android:layout_height="197dp"
+        android:background="#FB7066"
+        android:text="@string/bienvenue_chers_client"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="#004D40"
+        android:textColorHighlight="#F44336"
+        android:textColorHint="#F44336"
+        android:textColorLink="#FFEB3B"
+        android:textSize="48sp"
+        android:textStyle="italic" />
+
+    <Button
+        android:id="@+id/ClientInscriptionButton"
+        android:layout_width="match_parent"
+        android:layout_height="146dp"
+        android:layout_weight="1"
+        android:onClick="ClientInscriptionButton"
+        android:text="@string/inscription"
+        android:textColor="#FF9E80"
+        android:textSize="34sp"
+        tools:ignore="VisualLintButtonSize" />
+
+    <Button
+        android:id="@+id/ClientConnexionButton"
+        android:layout_width="match_parent"
+        android:layout_height="146dp"
+        android:layout_weight="1"
+        android:onClick="ClientConnexionButton"
+        android:text="@string/connexion"
+        android:textColor="#FF9E80"
+        android:textSize="34sp"
+        tools:ignore="VisualLintButtonSize" />
+
+    <Button
+        android:id="@+id/ClientRetourMainButton"
+        android:layout_width="match_parent"
+        android:layout_height="146dp"
+        android:layout_weight="1"
+        android:onClick="RetourMainButton"
+        android:text="@string/retour"
+        android:textColor="#FF9E80"
+        android:textSize="34sp"
+        tools:ignore="VisualLintButtonSize" />
+</LinearLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D9EDEF"
+    android:orientation="vertical"
+    android:visibility="visible">
+
+    <TextView
+        android:id="@+id/AdministrateurConnexionUserNameText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FDD9D6"
+        android:text="@string/nom_d_utilisateur" />
+
+    <EditText
+        android:id="@+id/AdministrateurSetUsernameConnexionText"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:visibility="visible"
+        tools:ignore="VisualLintTextFieldSize" />
+
+    <TextView
+        android:id="@+id/AdministrateurPasswordConnexionText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F8D7D7"
+        android:text="@string/mot_de_passe" />
+
+    <EditText
+        android:id="@+id/AdministrateurSetPasswordConnexionText"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:backgroundTint="#FFFFFF"
+        android:visibility="visible"
+        tools:ignore="VisualLintTextFieldSize" />
+
+    <Button
+        android:id="@+id/OkAdministrateurConnexionButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="AdministrateurConnectedButton"
+        android:text="@string/connexion"
+        tools:ignore="VisualLintButtonSize" />
+
+    <Button
+        android:id="@+id/AdministrateurRetoutButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="RetourMainButton"
+        android:text="@string/retour_au_menu_principal"
+        android:translationY="200dp" />
+
+    <TextView
+        android:id="@+id/AdministrateurConnexionErreurText"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textColor="#F30C0C" />
+
+    <TextView
+        android:id="@+id/AdministrationMessageUsernameText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/le_nom_d_utilisateur_est_admin" />
+
+    <TextView
+        android:id="@+id/AdministrateurPasswordMessageText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/le_mot_de_passe_est_password123" />
+
+</LinearLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D9EDEF"
+    android:orientation="vertical"
+    android:visibility="visible">
+
+    <TextView
+        android:id="@+id/EmployerConnexionUserNameText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FDD9D6"
+        android:text="@string/nom_d_utilisateur" />
+
+    <EditText
+        android:id="@+id/EmployerSetUsernameConnexionText"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:visibility="visible"
+        tools:ignore="VisualLintTextFieldSize" />
+
+    <TextView
+        android:id="@+id/EmployerPasswordConnexionText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F8D7D7"
+        android:text="@string/mot_de_passe" />
+
+    <EditText
+        android:id="@+id/EmployerSetPasswordConnexionText"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:backgroundTint="#FFFFFF"
+        android:visibility="visible"
+        tools:ignore="VisualLintTextFieldSize" />
+
+    <Button
+        android:id="@+id/OkEmployerConnexionButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="EmployerConnectedConnexionButton"
+        android:text="@string/connexion"
+        tools:ignore="VisualLintButtonSize" />
+
+    <TextView
+        android:id="@+id/EmployerRetourInscriptionText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FADFDF"
+        android:text="@string/pas_encore_de_compte"
+        android:textSize="34sp"
+        android:translationY="150dp" />
+
+    <Button
+        android:id="@+id/EmployerRetourInscriptionButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="EmployerInscriptionButton"
+        android:text="@string/inscription"
+        android:translationY="200dp"
+        tools:ignore="VisualLintButtonSize" />
+
+    <TextView
+        android:id="@+id/EmployerErreurConnectionText"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:textColor="#EC0404" />
+</LinearLayout>

@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.1"
+        android:orientation="horizontal"
+        android:baselineAligned="false">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            tools:ignore="NestedWeights">
+
+            <TextView
+                android:id="@+id/EmployerNomdelaSuccursaleText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.1"
+                android:background="#FDC1D6"
+                android:text="@string/nom_de_la_succursale"
+                android:textSize="24sp" />
+
+            <EditText
+                android:id="@+id/EmployerSetNomdelaSuccursaleText"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:layout_weight="0.5" />
+
+            <TextView
+                android:id="@+id/EmployerServicesoffertsText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.1"
+                android:background="#AFE3EA"
+                android:text="@string/services_offerts"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/EmployerPermisConduireText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.1"
+                android:background="#FDC1D6"
+                android:text="@string/permis_de_conduire"
+                android:textSize="24sp" />
+
+            <EditText
+                android:id="@+id/EmployerSetPermisConduireText"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:layout_weight="0.5"
+                android:hint='Entrer "Y" ou "N"'
+                android:inputType="textCapCharacters"
+                android:maxLength="1" />
+
+            <TextView
+                android:id="@+id/EmployerCartesanteText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.1"
+                android:background="#FDC1D6"
+                android:text="@string/carte_sante"
+                android:textSize="24sp" />
+
+            <EditText
+                android:id="@+id/EmployerSetCartesanteText"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:layout_weight="0.5"
+                android:hint='Entrer "Y" ou "N"'
+                android:inputType="textCapCharacters"
+                android:maxLength="1" />
+
+            <TextView
+                android:id="@+id/EmployerPieceIdentiteText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.1"
+                android:background="#FDC1D6"
+                android:text="@string/piece_d_identite_avec_photo"
+                android:textSize="24sp" />
+
+            <EditText
+                android:id="@+id/EmployerSetPieceIdentiteText"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:layout_weight="0.5"
+                android:hint='Entrer "Y" ou "N"'
+                android:inputType="textCapCharacters"
+                android:maxLength="1" />
+
+            <TextView
+                android:id="@+id/EmployerInscriptionErreurText"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="2"
+                android:textColor="#F30A0A" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="15dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"></LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/EmployerPasswordInscriptionText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:background="#FDC1D6"
+                android:text="@string/mot_de_passe2"
+                android:textSize="24sp" />
+
+            <EditText
+                android:id="@+id/EmployerSetPasswordInscriptionText"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:maxLength="10"
+                android:inputType="text|textPassword"
+                android:layout_weight="0.5" />
+
+            <TextView
+                android:id="@+id/EmployerCoordonneesText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:background="#C5F1F6"
+                android:text="@string/coordonnees"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/EmployerAdresseText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:background="#FDC1D6"
+                android:text="@string/adresse"
+                android:textSize="24sp" />
+
+            <EditText
+                android:id="@+id/EmployerSetAdresseText"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:layout_weight="0.5" />
+
+            <TextView
+                android:id="@+id/EmployerVilleText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:background="#FDC1D6"
+                android:text="Ville"
+                android:textSize="24sp"
+                tools:ignore="HardcodedText" />
+
+            <EditText
+                android:id="@+id/EmployerSetVilleText"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:inputType="text"
+                android:layout_weight="0.5" />
+
+            <TextView
+                android:id="@+id/EmployerProvinceText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:background="#FDC1D6"
+                android:text="@string/province"
+                android:textSize="24sp" />
+
+            <EditText
+                android:id="@+id/EmployerSetProvinceText"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:layout_weight="0.5"
+                android:inputType="text"
+                android:maxLength="2"
+                />
+
+            <TextView
+                android:id="@+id/EmployerHeuredouvertureText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:background="#AFE3EA"
+                android:text="@string/heures_d_ouverture"
+                android:textSize="24sp"
+                />
+
+            <TextView
+                android:id="@+id/EmployerOuvertureText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:background="#FDC1D6"
+                android:text="@string/ouverture"
+                android:textSize="24sp" />
+
+            <EditText
+                android:id="@+id/EmployerSetOuvertureText"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:layout_weight="0.5"
+                android:hint='Entre "00" et "24" (format 24h)'
+                android:inputType="number"
+                android:maxLength="2" />
+
+            <TextView
+                android:id="@+id/EmployerFermetureText"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:layout_weight="0.5"
+                android:background="#FDC1D6"
+                android:text="@string/fermeture"
+                android:textSize="24sp" />
+
+            <EditText
+                android:id="@+id/EmployerSetFermetureText"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:layout_weight="1"
+                android:ems="2"
+                android:maxLength="2"
+                android:hint='Entre "00" et "24" (format 24h)'
+                android:inputType="number" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <Button
+            android:id="@+id/EmployerInscriptionCreationButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="EmployerConnectedInscriptionButton"
+            android:text="@string/inscription" />
+    </LinearLayout>
+
+</LinearLayout>

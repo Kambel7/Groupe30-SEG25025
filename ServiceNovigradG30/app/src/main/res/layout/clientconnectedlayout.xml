@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/ClientMessageBienvenueText"
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:layout_weight="0.3"
+        android:background="#C8EFF4"
+        android:text="@string/bienvenue_dans_votre_compte_client"
+        android:textAlignment="center"
+        android:textColor="#5A8528"
+        android:textSize="34sp" />
+
+    <TextView
+        android:id="@+id/ClientAfficheBonjourText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="#A5E8F1" />
+
+    <Button
+        android:id="@+id/ClientRetourMenuprincipalButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.3"
+        android:onClick="RetourMainButton"
+        android:text="@string/retour_au_menu_principal" />
+</LinearLayout>
